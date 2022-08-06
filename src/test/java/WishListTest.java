@@ -1,3 +1,4 @@
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,7 +10,7 @@ public class WishListTest {
     // Add to Wishlist. Pe viitor, după ce veți învăța să faceți și verificări, veți putea reveni pentru a vă asigura că
     // adăugarea în wishlist poate fi realizată doar de utilizatorii autentificați. Apelati metoda aceasta in metoda main
     // pentru a rula testul.
-
+@Test
 public void validWhisListTest(){
             System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
             WebDriver driver = new ChromeDriver();
@@ -17,8 +18,8 @@ public void validWhisListTest(){
             driver.get("http://testfasttrackit.info/selenium-test");
             driver.findElement(By.cssSelector("#header > div > div.skip-links > div > a > span.label")).click();
             driver.findElement(By.cssSelector("#header-account > div > ul > li.last > a")).click();
-            driver.findElement(By.id("email")).sendKeys("cosmin@fasttrackit.org");
-            driver.findElement(By.id("pass")).sendKeys("123456");
+            driver.findElement(By.id("email")).sendKeys("pontebeatrix@gmail.com");
+            driver.findElement(By.id("pass")).sendKeys("123456789");
             driver.findElement(By.id("send2")).click();
             wait(3);
             driver.get("http://testfasttrackit.info/selenium-test");

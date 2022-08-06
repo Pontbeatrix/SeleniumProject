@@ -21,7 +21,7 @@ public class RegisterTest {
         driver.findElement(By.id("is_subscribed")).click();
         driver.findElement(By.cssSelector("#form-validate > div.buttons-set > button > span > span")).click();
         wait(5);
-       // driver.quit();
+        //driver.quit();
     }
         public static void wait(int seconds) {
             try {
